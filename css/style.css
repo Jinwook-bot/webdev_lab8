@@ -1,20 +1,22 @@
 #main-navbar {
+  background-color: blue;
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: blue;
   z-index: 2;
 }
 
 #navbar-container {
+  float: left;
   width: 100%;
   position: relative;
 }
 
 #main-navbar ul {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -24,13 +26,16 @@
 }
 
 #main-navbar ul li {
+  display: inline-block;
   margin: 0 20px;
+  position: static;
 }
 
 #main-navbar ul li a {
+  display: block;
+  padding: 10px 20px;
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
 }
 
 #main-navbar ul li a:hover,
@@ -42,30 +47,30 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 20%;
-  height: 100vh;
   background-color: red;
-  z-index: 1;
+  height: 100vh;
+  width: 20%;
   padding-top: 50px;
+  z-index: 1;
   box-sizing: border-box;
 }
 
 #sidebar ul {
-  list-style: none;
-  margin: 0;
+  list-style-type: none;
+  text-align: center;
   padding: 0;
+  margin: 0;
 }
 
 #sidebar ul li {
-  text-align: center;
   margin: 20px 0;
 }
 
 #sidebar ul li a {
-  color: #fff;
-  text-decoration: none;
   display: block;
   padding: 15px 0;
+  color: #fff;
+  text-decoration: none;
 }
 
 #sidebar ul li a:hover {

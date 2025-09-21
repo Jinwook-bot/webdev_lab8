@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   background-color: blue;
+  z-index: 1001;
 }
 
 #main-navbar ul {
@@ -35,6 +36,7 @@
   width: 20%;
   height: 100vh;
   background-color: red;
+  z-index: 1000;
 }
 
 #sidebar ul {

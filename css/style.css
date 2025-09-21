@@ -1,0 +1,103 @@
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #eee;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.topnav a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.sidenav {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 20%;
+  height: calc(100vh - 50px);
+  background-color: #333;
+  padding-top: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 900;
+}
+
+.sidenav a {
+  display: block;
+  color: #eee;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+
+.sidenav a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding-top: 50px;
+  margin-right: 20%;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #ffd700;
+}
+
+#planets {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+#planets th,
+#planets td {
+  padding: 20px;
+  border: 1px solid #444;
+  color: #eee;
+}
+
+#planets thead {
+  background-color: #111;
+}
+
+#planets tbody tr:nth-child(odd) {
+  background-color: #1a1a1a;
+}
+
+#planets tbody tr:nth-child(even) {
+  background-color: #0d0d0d;
+}
+
+#planets tbody tr:hover {
+  background-color: #333;
+}
+
+.planet-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #555;
+  display: block;
+  margin: 0 auto;
+}

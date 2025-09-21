@@ -1,61 +1,87 @@
-.topnav {
+/* Top navigation */
+#main-navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #222;
+  background-color: blue;
   overflow: hidden;
   z-index: 1000;
 }
 
-.topnav a {
+#navbar-container {
+  width: 100%;
+  position: relative;
+}
+
+#main-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
   float: left;
+}
+
+#main-navbar ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+#main-navbar ul li a {
   display: block;
-  color: #eee;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-.topnav a:hover {
-  background-color: #444;
+  padding: 10px 20px;
   color: #fff;
+  text-decoration: none;
 }
 
-.sidenav {
+#main-navbar ul li a:hover {
+  background-color: #000;
+}
+
+#onpage {
+  text-decoration: underline overline;
+}
+
+/* Side navigation */
+#sidebar {
   position: fixed;
   top: 50px;
   right: 0;
   width: 20%;
   height: calc(100vh - 50px);
-  background-color: #333;
-  padding-top: 20px;
-  box-sizing: border-box;
+  background-color: red;
   overflow-y: auto;
   z-index: 900;
 }
 
-.sidenav a {
+#sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+#sidebar ul li a {
   display: block;
-  color: #eee;
-  padding: 10px 16px;
-  text-decoration: none;
-  font-size: 0.95em;
-}
-
-.sidenav a:hover {
-  background-color: #555;
+  padding: 15px 0;
   color: #fff;
+  text-decoration: none;
 }
 
+#sidebar ul li a:hover {
+  background-color: #000;
+}
+
+/* Content area padding */
 body {
   margin: 0;
-  padding-top: 50px;
-  margin-right: 20%;
+  padding-top: 50px;    /* height of top navbar */
+  margin-right: 20%;    /* width of sidebar */
   box-sizing: border-box;
 }
 
+/* Planet table styles */
 h1 {
   text-align: center;
   font-size: 2.5em;

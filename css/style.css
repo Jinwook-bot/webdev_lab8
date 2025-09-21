@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   background-color: blue;
-  overflow: hidden;
   z-index: 1000;
 }
 
@@ -14,11 +13,11 @@
 }
 
 #main-navbar ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
   left: 50%;
+  position: relative;
   float: left;
 }
 
@@ -55,7 +54,8 @@
 }
 
 #sidebar ul {
-  list-style-type: none;
+  list-style: none;
+  margin: 0;
   padding: 0;
   text-align: center;
 }
